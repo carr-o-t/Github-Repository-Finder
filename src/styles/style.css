@@ -576,8 +576,8 @@ video {
   margin-top: 250px;
 }
 
-.mr-2{
-  margin-right: 0.5rem;
+.mr-3{
+  margin-right: 0.75rem;
 }
 
 .mb-4{
@@ -735,6 +735,48 @@ video {
 .animate-bounce{
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+@keyframes bounce{
+  0%, 100%{
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce200{
+  -webkit-animation: bounce 1s infinite 200ms;
+          animation: bounce 1s infinite 200ms;
+}
+
+@keyframes bounce{
+  0%, 100%{
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce400{
+  -webkit-animation: bounce 1s infinite 400ms;
+          animation: bounce 1s infinite 400ms;
 }
 
 @-webkit-keyframes pulse{
@@ -959,7 +1001,6 @@ video {
 }
 
 body{
-  min-height: 100vh;
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   font-family: 'Poppins', sans-serif;

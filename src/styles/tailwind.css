@@ -5,5 +5,5 @@
 @tailwind components;
 
 body {
-    @apply bg-slate-200 font-['Poppins',_sans-serif] min-h-screen;
+    @apply bg-slate-200 font-['Poppins',_sans-serif] ;
 }
