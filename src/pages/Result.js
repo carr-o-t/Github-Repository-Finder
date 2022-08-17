@@ -133,7 +133,7 @@ function Result() {
                         setCurrentPage(prevElement)
                         console.log(nextPage);
                     }} >
-                        <span className="text-gray-600">next</span>
+                        <span className="text-gray-600 text-sm">next</span>
                         <ArrowRightIcon className="h-4 w-4 text-gray-600" />
                     </button>
                 </div>
