@@ -6,9 +6,9 @@ function CircleLoader() {
 
     return (
         <div className='flex justify-center align-middle  mt-[250px]'>
-            <div className={`${circleCommonClasses} mr-2 animate-bounce`}></div>
+            <div className={`${circleCommonClasses} mr-3 animate-bounce`}></div>
             <div
-                className={`${circleCommonClasses} mr-2 animate-bounce200`}
+                className={`${circleCommonClasses} mr-3 animate-bounce200`}
             ></div>
             <div className={`${circleCommonClasses} animate-bounce400`}></div>
         </div>
